@@ -1,0 +1,770 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet"
+        />
+        <style>
+        /* Couverture */
+
+        .CouvertureSection {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .CouvertureLogo {
+            padding: 80px;
+        }
+
+        .CouvertureFooter {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            padding: 80px;
+        }
+
+        .CouvertureFooterTitle {
+            font-size: 32px;
+            line-height: 36px;
+            font-weight: 700;
+        }
+
+        .CouvertureFooterDate {
+            font-weight: 700;
+        }
+
+        .CouvertureTitle {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .CouvertureTitle > .Candidate {
+            font-size: 52px;
+            line-height: 62px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .CouvertureTitle > .Icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        /* About */
+
+        .AboutTitleWrapper {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .AboutTitleWrapper > .AboutTitle {
+            text-align: center;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 10px;
+        }
+
+        .AboutTitleWrapper > .AboutSubTitle {
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #cbd5e1;
+        }
+
+        .AboutContent {
+            padding-left: 60px;
+            padding-right: 60px;
+            color: #cbd5e1;
+            line-height: 24px;
+            font-size: 13px;
+        }
+
+        .AboutContent > b {
+            color: white;
+        }
+        
+        /* Jobmatch */
+
+        .Questions {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            color: white;
+            padding: 15px 20px;
+            overflow: hidden;
+        }
+
+        .Title {
+            color: white;
+            padding-top: 15px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 32px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .Block {
+            height: 50px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 20px;
+        }
+
+        .BlockInvalid {
+            background: rgba(37.72, 85.52, 255, 0.2);
+        }
+
+        .BlockValid,
+        .BlockTrait {
+            background: #0f1f56;
+        }
+
+        .Trait {
+            font-size: 13px;
+            font-weight: 700;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .TraitIcon {
+            width: 14px;
+            height: 14px;
+            min-width: 14px;
+            min-height: 14px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px rgba(255, 255, 255, 0.32) solid;
+        }
+
+        .Question {
+            font-size: 10px;
+            font-weight: 400;
+            flex: 1;
+            color: #f1f5f9;
+        }
+
+        .Header {
+            padding-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px #2b365c solid;
+            color: #f1f5f9;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .HeaderIcons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 13px;
+        }
+
+        .Footer {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+            padding-top: 10px;
+            border-top: 2px #2b365c solid;
+            width: calc(100% - 40px);
+            color: white;
+            align-items: center;
+        }
+
+        .FooterTitle {
+            flex: 1;
+            font-weight: 500;
+            font-size: 10px;
+        }
+
+        .FooterCandidate {
+            flex: 1;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .FooterLogo {
+            flex: 1;
+            display: flex;
+            justify-content: end;
+        }
+
+        .Label {
+            padding: 8px 16px;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .LabelWrapper {
+            margin-bottom: 20px;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            background: #0f133f;
+        }
+        section {
+            height: 297mm;
+            width: 210mm;
+            clear: both;
+            page-break-after: always;
+            position: relative;
+            overflow: hidden;
+            font-family: "Montserrat";
+            color: white;
+        }
+        @page {
+            height: 297mm;
+            width: 210mm;
+        }
+        </style>
+    </head>
+    <body>
+    </body>
+    </html>
+        <section class="CouvertureSection">
+        <div class="CouvertureLogo">
+            <svg width="100" height="17.5" viewBox="0 0 55 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_281_6046)">
+                <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.89216 0.00363636C6.86326 0.00363636 7.7169 0.104545 8.45453 0.306667C9.19159 0.508485 9.80232 0.781212 10.2887 1.12424C10.774 1.46788 11.1404 1.87576 11.3887 2.34788C11.6377 2.82061 11.7611 3.32758 11.7611 3.86848V3.90485H9.72154V3.86848C9.72154 3.5697 9.62701 3.29515 9.43966 3.04455C9.25346 2.79455 8.99107 2.58242 8.65419 2.40848C8.31846 2.23515 7.90997 2.09939 7.42844 2.00273C6.94719 1.90576 6.41925 1.85727 5.84633 1.85727C4.47849 1.85727 3.50596 2.13212 2.92846 2.68152C2.35182 3.2303 2.06365 3.99394 2.06365 4.97152V5.10424C2.06365 6.05818 2.3501 6.80121 2.92273 7.33394C3.49622 7.86758 4.47133 8.13394 5.84633 8.13394C6.32013 8.13394 6.77445 8.10546 7.21044 8.04879C7.64586 7.99273 8.03602 7.8897 8.38005 7.7397C8.72352 7.59061 9.01628 7.38212 9.2569 7.11606C9.49753 6.84939 9.65995 6.51 9.74388 6.09788H5.91536V4.32879H11.7608V9.93939H10.5124L10.2366 8.09758C9.96961 8.63879 9.45456 9.09152 8.69544 9.45515C7.93404 9.81818 6.97669 10.0003 5.82427 10.0003C4.76896 10.0003 3.87063 9.88455 3.12984 9.65424C2.38792 9.42485 1.78635 9.09727 1.32372 8.67333C0.867392 8.2589 0.520051 7.72674 0.315391 7.12849C0.10513 6.52242 0 5.84333 0 5.09273V4.87424C0 4.15515 0.120313 3.49727 0.360938 2.89939C0.601563 2.30152 0.9625 1.78909 1.4449 1.36061C1.92615 0.932424 2.53917 0.599091 3.28453 0.361212C4.02904 0.122727 4.89844 0.00363636 5.89245 0.00363636H5.89216ZM17.2975 1.15455C18.9475 1.15455 20.1741 1.50424 20.9773 2.20242C21.78 2.90182 22.1808 3.85273 22.1808 5.05606V6.20727H14.477C14.5535 6.9503 14.8225 7.47152 15.2851 7.7703C15.7478 8.06939 16.4335 8.21879 17.343 8.21879C17.7114 8.22096 18.0794 8.19259 18.4436 8.13394C18.7796 8.07758 19.071 7.99 19.3153 7.87333C19.5594 7.75606 19.7499 7.60061 19.8877 7.40697C20.026 7.21273 20.0939 6.98242 20.0939 6.71606V6.69182H22.1808V6.71606C22.1808 7.17667 22.0868 7.60697 21.8992 8.00636C21.7127 8.40636 21.4216 8.75364 21.0278 9.04879C20.6342 9.34364 20.1283 9.57606 19.509 9.74576C18.8902 9.91485 18.1489 10 17.2852 10C15.6037 10 14.3662 9.62818 13.5724 8.88485C12.7766 8.14212 12.3802 7.0997 12.3802 5.75879V5.66182C12.3802 4.23242 12.7795 3.12364 13.5778 2.33636C14.3765 1.54848 15.6151 1.15455 17.2975 1.15455V1.15455ZM50.117 1.15455C51.828 1.15455 53.0707 1.54636 53.8421 2.3297C54.6139 3.11364 55 4.18333 55 5.54061V5.61333C55 6.97061 54.6139 8.04061 53.8421 8.82455C53.0707 9.60788 51.8283 9.9997 50.117 9.9997C48.4046 9.9997 47.1608 9.60788 46.3856 8.82455C45.6093 8.04091 45.2215 6.97061 45.2215 5.61333V5.54061C45.2215 4.18333 45.6096 3.11364 46.3856 2.3297C47.1611 1.54636 48.4046 1.15455 50.117 1.15455V1.15455ZM34.5738 0.0642424C35.3146 0.0642424 35.9474 0.145152 36.4716 0.306364C36.9947 0.467879 37.4212 0.694242 37.7495 0.985152C38.0708 1.26592 38.3192 1.62864 38.4714 2.03909C38.6246 2.45091 38.7008 2.90364 38.7008 3.39606V3.54152C38.7008 4.02636 38.6246 4.47061 38.4716 4.87424C38.3187 5.27848 38.0758 5.62364 37.744 5.91C37.4117 6.19727 36.9772 6.42152 36.4424 6.58273C35.9078 6.74424 35.2662 6.82515 34.5162 6.82515H31.307V9.93939H29.2437V0.0642424H34.5738ZM44.5463 1.15455C44.6918 1.15455 44.8055 1.15879 44.8897 1.16667C44.9787 1.17555 45.067 1.19176 45.1536 1.21515V3.37182C44.8021 3.29091 44.4065 3.23849 43.9676 3.21424C43.5276 3.19 43.1169 3.21424 42.7344 3.28697C42.3523 3.3597 42.0295 3.49121 41.7662 3.68091C41.5032 3.87091 41.3709 4.13939 41.3709 4.48667V9.93909H39.3072V1.21485H41.3706V4.08697C41.3706 3.71515 41.4267 3.35152 41.5367 2.99636C41.6463 2.64378 41.8307 2.32243 42.0759 2.05697C42.3242 1.78667 42.6525 1.56848 43.0613 1.40303C43.4695 1.23788 43.9653 1.15455 44.5463 1.15455V1.15455ZM26.0895 0V0.29697C26.0901 1.11667 25.897 1.94818 25.2926 2.10485H28.6166V4.0703H25.9766V7.03394C25.9766 7.85364 26.2049 7.97394 26.6378 7.97394H28.6166V9.93909H25.913C24.306 9.93909 23.998 9.25303 23.998 7.03364V4.0703H22.5222V2.10455H23.3137C23.9869 1.9003 24.1232 1.04424 24.1112 0.29697H24.1106V0H26.0898H26.0895ZM50.117 3.10545C49.1459 3.10545 48.4332 3.28727 47.9792 3.6503C47.5237 4.01394 47.2963 4.64818 47.2963 5.55273V5.60152C47.2963 6.50606 47.5237 7.14 47.9792 7.50364C48.4332 7.86727 49.1462 8.04909 50.117 8.04909C51.0876 8.04909 51.8003 7.86727 52.2543 7.50364C52.7089 7.14 52.9364 6.50606 52.9364 5.60152V5.55273C52.9364 4.64818 52.7089 4.01394 52.2546 3.6503C51.8003 3.28697 51.0876 3.10545 50.117 3.10545V3.10545ZM34.4022 2.00303H31.307V5.00758H34.4022C35.1355 5.00758 35.6787 4.89455 36.0293 4.66818C36.3816 4.44242 36.5572 4.05848 36.5572 3.51758V3.48091C36.5572 2.94758 36.3819 2.56848 36.0293 2.34212C35.6787 2.11576 35.1355 2.00273 34.4022 2.00273V2.00303ZM17.2517 2.88727C16.4791 2.88727 15.8718 3.00848 15.4286 3.25091C14.9846 3.49333 14.6953 3.90121 14.5575 4.47455H20.083C19.9905 3.91697 19.7144 3.51333 19.2517 3.26303C18.7888 3.01242 18.1231 2.88727 17.2517 2.88727V2.88727Z"
+                fill="white"
+                ></path>
+            </g>
+            <defs>
+                <clipPath id="clip0_281_6046"><rect width="55" height="10" fill="white"></rect></clipPath>
+            </defs>
+            </svg>
+        </div>
+        <div class="CouvertureTitle">
+            <div class="Candidate">laure<br/>bourdon</div>
+            <div class="Icons">
+            <svg width="24" height="22" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M4.48743 1.04626L7.97486 6.97489H1L4.48743 1.04626Z"
+                stroke="#D6E900"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="22" height="22" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect
+                x="0.669098"
+                y="0.69751"
+                width="6.62611"
+                height="6.62611"
+                stroke="#2656FF"
+                stroke-width="0.97648"
+                ></rect>
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M0.989456 5.01056C0.989456 2.9882 2.6289 1.34875 4.65126 1.34875V1.34875C6.67361 1.34875 8.31306 2.9882 8.31306 5.01056V5.01056C8.31306 7.03291 6.67361 8.67236 4.65126 8.67236V8.67236C2.6289 8.67236 0.989456 7.03291 0.989456 5.01056V5.01056Z"
+                stroke="#54E975"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="22" height="24" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M7.28467 5.8824C7.28467 7.48745 5.87943 9.02109 4.14598 9.02109C2.41253 9.02109 1.00729 7.48745 1.00729 5.8824C1.00729 3.78994 4.14598 1 4.14598 1C4.14598 1 7.28467 3.78994 7.28467 5.8824Z"
+                stroke="#8B5CF6"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M4.98946 0.174316L4.99089 3.75544C4.99093 3.8501 5.10438 3.89857 5.1728 3.83317L7.82534 1.29791L5.18663 3.82382C5.11658 3.89087 5.16402 4.00908 5.26098 4.00912L9 4.01049L5.26098 4.01186C5.16402 4.01189 5.11658 4.1301 5.18663 4.19715L7.82534 6.72307L5.1728 4.18781C5.10438 4.12241 4.99093 4.17088 4.99089 4.26554L4.98946 7.84666L4.98802 4.26554C4.98798 4.17088 4.87454 4.12241 4.80611 4.18781L2.15357 6.72307L4.79228 4.19715C4.86233 4.1301 4.81489 4.01189 4.71793 4.01186L0.978912 4.01049L4.71793 4.00912C4.81489 4.00908 4.86233 3.89087 4.79228 3.82382L2.15357 1.29791L4.80611 3.83317C4.87454 3.89857 4.98798 3.8501 4.98802 3.75544L4.98946 0.174316Z"
+                stroke="#FF9548"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            </div>
+        </div>
+        <div class="CouvertureFooter">
+            <div class="CouvertureFooterTitle">Rapport d’adéquation<br />à un poste</div>
+            <div class="CouvertureFooterDate">03 - 06 - 2024</div>
+        </div>
+        </section>
+    
+        <section>
+            
+        <div class="Header">
+            <div class="HeaderIcons">
+            <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M4.48743 1.04626L7.97486 6.97489H1L4.48743 1.04626Z"
+                stroke="#D6E900"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect
+                x="0.669098"
+                y="0.69751"
+                width="6.62611"
+                height="6.62611"
+                stroke="#2656FF"
+                stroke-width="0.97648"
+                ></rect>
+            </svg>
+            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M0.989456 5.01056C0.989456 2.9882 2.6289 1.34875 4.65126 1.34875V1.34875C6.67361 1.34875 8.31306 2.9882 8.31306 5.01056V5.01056C8.31306 7.03291 6.67361 8.67236 4.65126 8.67236V8.67236C2.6289 8.67236 0.989456 7.03291 0.989456 5.01056V5.01056Z"
+                stroke="#54E975"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M7.28467 5.8824C7.28467 7.48745 5.87943 9.02109 4.14598 9.02109C2.41253 9.02109 1.00729 7.48745 1.00729 5.8824C1.00729 3.78994 4.14598 1 4.14598 1C4.14598 1 7.28467 3.78994 7.28467 5.8824Z"
+                stroke="#8B5CF6"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M4.98946 0.174316L4.99089 3.75544C4.99093 3.8501 5.10438 3.89857 5.1728 3.83317L7.82534 1.29791L5.18663 3.82382C5.11658 3.89087 5.16402 4.00908 5.26098 4.00912L9 4.01049L5.26098 4.01186C5.16402 4.01189 5.11658 4.1301 5.18663 4.19715L7.82534 6.72307L5.1728 4.18781C5.10438 4.12241 4.99093 4.17088 4.99089 4.26554L4.98946 7.84666L4.98802 4.26554C4.98798 4.17088 4.87454 4.12241 4.80611 4.18781L2.15357 6.72307L4.79228 4.19715C4.86233 4.1301 4.81489 4.01189 4.71793 4.01186L0.978912 4.01049L4.71793 4.00912C4.81489 4.00908 4.86233 3.89087 4.79228 3.82382L2.15357 1.29791L4.80611 3.83317C4.87454 3.89857 4.98798 3.8501 4.98802 3.75544L4.98946 0.174316Z"
+                stroke="#FF9548"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            </div>
+            <div>01</div>
+        </div>
+    
+            <div class="AboutTitleWrapper">
+                <div class="AboutTitle">À PROPOS</div>
+                <div class="AboutSubTitle">DU RAPPORT D’ADÉQUATION À UN POSTE</div>
+            </div>
+            <div class="AboutContent">
+                Ce rapport est issu de la fiche de poste <b style="text-transform: capitalize">commercial</b> et des réponses de
+                <b style="text-transform: capitalize">laure bourdon</b> au Questionnaire Big Five GetPro.<br /><br />Il vise
+                à présenter l'adéquation entre les <b>Softkills recherchées pour le poste</b> et les
+                <b>traits de personnalité du candidat</b>. Il est important de noter qu'un candidat peut très bien performer à
+                un poste sans correspondre exactement au profil type ; cependant, il est important d’<b
+                >analyser ces divergences</b
+                >.<br /><br />La liste des traits de personnalité mentionnés sont ceux attendus pour le poste et l’indicateur
+                (“élevé”, “très élevé”, “bas”, “très bas”) correspond au score du candidat. Par exemple, "Leadership élevé"
+                indique que le candidat possède un fort leadership. Si cette caractéristique est marquée en vert, cela signifie
+                qu'un leadership élevé est souhaité pour le poste. En revanche, si elle est en orange, le poste requiert un
+                niveau de leadership bas.<br /><br />Pour chaque trait de personnalité mentionné, nous proposons des
+                <b>questions d’entretien</b> afin d'approfondir la discussion. Ces questions sont particulièrement utiles pour
+                <b>explorer les écarts entre les traits de personnalité du candidat et les exigences du poste</b>, indiqués en
+                orange.<br /><br />Pour toute remarque, n’hésitez pas à envoyer un mail à
+                <u>science@getpro.fr.</u>
+            </div>
+            
+        <div class="Footer">
+            <div class="FooterTitle">Rapport de personnalité</div>
+            <div class="FooterCandidate">laure bourdon</div>
+            <div class="FooterLogo">
+            <svg width="77" height="14" viewBox="0 0 55 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_281_6046)">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.89216 0.00363636C6.86326 0.00363636 7.7169 0.104545 8.45453 0.306667C9.19159 0.508485 9.80232 0.781212 10.2887 1.12424C10.774 1.46788 11.1404 1.87576 11.3887 2.34788C11.6377 2.82061 11.7611 3.32758 11.7611 3.86848V3.90485H9.72154V3.86848C9.72154 3.5697 9.62701 3.29515 9.43966 3.04455C9.25346 2.79455 8.99107 2.58242 8.65419 2.40848C8.31846 2.23515 7.90997 2.09939 7.42844 2.00273C6.94719 1.90576 6.41925 1.85727 5.84633 1.85727C4.47849 1.85727 3.50596 2.13212 2.92846 2.68152C2.35182 3.2303 2.06365 3.99394 2.06365 4.97152V5.10424C2.06365 6.05818 2.3501 6.80121 2.92273 7.33394C3.49622 7.86758 4.47133 8.13394 5.84633 8.13394C6.32013 8.13394 6.77445 8.10546 7.21044 8.04879C7.64586 7.99273 8.03602 7.8897 8.38005 7.7397C8.72352 7.59061 9.01628 7.38212 9.2569 7.11606C9.49753 6.84939 9.65995 6.51 9.74388 6.09788H5.91536V4.32879H11.7608V9.93939H10.5124L10.2366 8.09758C9.96961 8.63879 9.45456 9.09152 8.69544 9.45515C7.93404 9.81818 6.97669 10.0003 5.82427 10.0003C4.76896 10.0003 3.87063 9.88455 3.12984 9.65424C2.38792 9.42485 1.78635 9.09727 1.32372 8.67333C0.867392 8.2589 0.520051 7.72674 0.315391 7.12849C0.10513 6.52242 0 5.84333 0 5.09273V4.87424C0 4.15515 0.120313 3.49727 0.360938 2.89939C0.601563 2.30152 0.9625 1.78909 1.4449 1.36061C1.92615 0.932424 2.53917 0.599091 3.28453 0.361212C4.02904 0.122727 4.89844 0.00363636 5.89245 0.00363636H5.89216ZM17.2975 1.15455C18.9475 1.15455 20.1741 1.50424 20.9773 2.20242C21.78 2.90182 22.1808 3.85273 22.1808 5.05606V6.20727H14.477C14.5535 6.9503 14.8225 7.47152 15.2851 7.7703C15.7478 8.06939 16.4335 8.21879 17.343 8.21879C17.7114 8.22096 18.0794 8.19259 18.4436 8.13394C18.7796 8.07758 19.071 7.99 19.3153 7.87333C19.5594 7.75606 19.7499 7.60061 19.8877 7.40697C20.026 7.21273 20.0939 6.98242 20.0939 6.71606V6.69182H22.1808V6.71606C22.1808 7.17667 22.0868 7.60697 21.8992 8.00636C21.7127 8.40636 21.4216 8.75364 21.0278 9.04879C20.6342 9.34364 20.1283 9.57606 19.509 9.74576C18.8902 9.91485 18.1489 10 17.2852 10C15.6037 10 14.3662 9.62818 13.5724 8.88485C12.7766 8.14212 12.3802 7.0997 12.3802 5.75879V5.66182C12.3802 4.23242 12.7795 3.12364 13.5778 2.33636C14.3765 1.54848 15.6151 1.15455 17.2975 1.15455V1.15455ZM50.117 1.15455C51.828 1.15455 53.0707 1.54636 53.8421 2.3297C54.6139 3.11364 55 4.18333 55 5.54061V5.61333C55 6.97061 54.6139 8.04061 53.8421 8.82455C53.0707 9.60788 51.8283 9.9997 50.117 9.9997C48.4046 9.9997 47.1608 9.60788 46.3856 8.82455C45.6093 8.04091 45.2215 6.97061 45.2215 5.61333V5.54061C45.2215 4.18333 45.6096 3.11364 46.3856 2.3297C47.1611 1.54636 48.4046 1.15455 50.117 1.15455V1.15455ZM34.5738 0.0642424C35.3146 0.0642424 35.9474 0.145152 36.4716 0.306364C36.9947 0.467879 37.4212 0.694242 37.7495 0.985152C38.0708 1.26592 38.3192 1.62864 38.4714 2.03909C38.6246 2.45091 38.7008 2.90364 38.7008 3.39606V3.54152C38.7008 4.02636 38.6246 4.47061 38.4716 4.87424C38.3187 5.27848 38.0758 5.62364 37.744 5.91C37.4117 6.19727 36.9772 6.42152 36.4424 6.58273C35.9078 6.74424 35.2662 6.82515 34.5162 6.82515H31.307V9.93939H29.2437V0.0642424H34.5738ZM44.5463 1.15455C44.6918 1.15455 44.8055 1.15879 44.8897 1.16667C44.9787 1.17555 45.067 1.19176 45.1536 1.21515V3.37182C44.8021 3.29091 44.4065 3.23849 43.9676 3.21424C43.5276 3.19 43.1169 3.21424 42.7344 3.28697C42.3523 3.3597 42.0295 3.49121 41.7662 3.68091C41.5032 3.87091 41.3709 4.13939 41.3709 4.48667V9.93909H39.3072V1.21485H41.3706V4.08697C41.3706 3.71515 41.4267 3.35152 41.5367 2.99636C41.6463 2.64378 41.8307 2.32243 42.0759 2.05697C42.3242 1.78667 42.6525 1.56848 43.0613 1.40303C43.4695 1.23788 43.9653 1.15455 44.5463 1.15455V1.15455ZM26.0895 0V0.29697C26.0901 1.11667 25.897 1.94818 25.2926 2.10485H28.6166V4.0703H25.9766V7.03394C25.9766 7.85364 26.2049 7.97394 26.6378 7.97394H28.6166V9.93909H25.913C24.306 9.93909 23.998 9.25303 23.998 7.03364V4.0703H22.5222V2.10455H23.3137C23.9869 1.9003 24.1232 1.04424 24.1112 0.29697H24.1106V0H26.0898H26.0895ZM50.117 3.10545C49.1459 3.10545 48.4332 3.28727 47.9792 3.6503C47.5237 4.01394 47.2963 4.64818 47.2963 5.55273V5.60152C47.2963 6.50606 47.5237 7.14 47.9792 7.50364C48.4332 7.86727 49.1462 8.04909 50.117 8.04909C51.0876 8.04909 51.8003 7.86727 52.2543 7.50364C52.7089 7.14 52.9364 6.50606 52.9364 5.60152V5.55273C52.9364 4.64818 52.7089 4.01394 52.2546 3.6503C51.8003 3.28697 51.0876 3.10545 50.117 3.10545V3.10545ZM34.4022 2.00303H31.307V5.00758H34.4022C35.1355 5.00758 35.6787 4.89455 36.0293 4.66818C36.3816 4.44242 36.5572 4.05848 36.5572 3.51758V3.48091C36.5572 2.94758 36.3819 2.56848 36.0293 2.34212C35.6787 2.11576 35.1355 2.00273 34.4022 2.00273V2.00303ZM17.2517 2.88727C16.4791 2.88727 15.8718 3.00848 15.4286 3.25091C14.9846 3.49333 14.6953 3.90121 14.5575 4.47455H20.083C19.9905 3.91697 19.7144 3.51333 19.2517 3.26303C18.7888 3.01242 18.1231 2.88727 17.2517 2.88727V2.88727Z"
+                    fill="white"
+                ></path>
+                </g>
+                <defs>
+                <clipPath id="clip0_281_6046"><rect width="55" height="10" fill="white"></rect></clipPath>
+                </defs>
+            </svg>
+            </div>
+        </div>
+    
+        </section>
+    <section>
+        <div class="Header">
+            <div class="HeaderIcons">
+            <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M4.48743 1.04626L7.97486 6.97489H1L4.48743 1.04626Z"
+                stroke="#D6E900"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect
+                x="0.669098"
+                y="0.69751"
+                width="6.62611"
+                height="6.62611"
+                stroke="#2656FF"
+                stroke-width="0.97648"
+                ></rect>
+            </svg>
+            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M0.989456 5.01056C0.989456 2.9882 2.6289 1.34875 4.65126 1.34875V1.34875C6.67361 1.34875 8.31306 2.9882 8.31306 5.01056V5.01056C8.31306 7.03291 6.67361 8.67236 4.65126 8.67236V8.67236C2.6289 8.67236 0.989456 7.03291 0.989456 5.01056V5.01056Z"
+                stroke="#54E975"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M7.28467 5.8824C7.28467 7.48745 5.87943 9.02109 4.14598 9.02109C2.41253 9.02109 1.00729 7.48745 1.00729 5.8824C1.00729 3.78994 4.14598 1 4.14598 1C4.14598 1 7.28467 3.78994 7.28467 5.8824Z"
+                stroke="#8B5CF6"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M4.98946 0.174316L4.99089 3.75544C4.99093 3.8501 5.10438 3.89857 5.1728 3.83317L7.82534 1.29791L5.18663 3.82382C5.11658 3.89087 5.16402 4.00908 5.26098 4.00912L9 4.01049L5.26098 4.01186C5.16402 4.01189 5.11658 4.1301 5.18663 4.19715L7.82534 6.72307L5.1728 4.18781C5.10438 4.12241 4.99093 4.17088 4.99089 4.26554L4.98946 7.84666L4.98802 4.26554C4.98798 4.17088 4.87454 4.12241 4.80611 4.18781L2.15357 6.72307L4.79228 4.19715C4.86233 4.1301 4.81489 4.01189 4.71793 4.01186L0.978912 4.01049L4.71793 4.00912C4.81489 4.00908 4.86233 3.89087 4.79228 3.82382L2.15357 1.29791L4.80611 3.83317C4.87454 3.89857 4.98798 3.8501 4.98802 3.75544L4.98946 0.174316Z"
+                stroke="#FF9548"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            </div>
+            <div>02</div>
+        </div>
+    <h1 class='Title'>Points à valider</h1><div class='Questions'>
+        <div class="Block BlockValid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.33331 3.83333L3.16449 5.66667L6.83331 2"
+                  stroke="#93C5FD"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div>Franc-parler élevé</div>
+          </div>
+          <p class="Question">
+            ➤ Pourriez-vous décrire une situation où votre franchise a changé le cours d'un projet ou d'une réunion importante au travail ?
+
+          </p>
+        </div>
+    
+        <div class="Block BlockValid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.33331 3.83333L3.16449 5.66667L6.83331 2"
+                  stroke="#93C5FD"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div>Organisation élevée</div>
+          </div>
+          <p class="Question">
+            ➤ Pourriez-vous me décrire comment vous avez organisé votre travail lors d'une période particulièrement chargée ou sous pression, en me donnant des exemples concrets de votre approche et de vos méthodes ?
+
+          </p>
+        </div>
+    
+        <div class="Block BlockValid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.33331 3.83333L3.16449 5.66667L6.83331 2"
+                  stroke="#93C5FD"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div>Sens du devoir élevé</div>
+          </div>
+          <p class="Question">
+            ➤ Pouvez-vous me décrire une situation professionnelle où vous avez fait preuve d'une fiabilité exceptionnelle, en allant au-delà des attentes pour accomplir votre devoir ?
+
+          </p>
+        </div>
+    
+        <div class="Block BlockValid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.33331 3.83333L3.16449 5.66667L6.83331 2"
+                  stroke="#93C5FD"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div>Recherche de réussite élevée</div>
+          </div>
+          <p class="Question">
+            ➤ Pouvez-vous me donner un exemple spécifique d'une situation professionnelle où vous avez clairement dépassé vos limites ou vos responsabilités habituelles, et quelles en ont été les conséquences pour vous et votre entreprise ?
+
+          </p>
+        </div>
+    
+        <div class="Block BlockValid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.33331 3.83333L3.16449 5.66667L6.83331 2"
+                  stroke="#93C5FD"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div>Persévérance élevée</div>
+          </div>
+          <p class="Question">
+            ➤ Quelle a été la tâche la plus répétitive et monotone que vous avez dû accomplir dans votre carrière, et comment avez-vous réussi à la mener à terme ?
+
+          </p>
+        </div>
+    
+        <div class="Block BlockValid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.33331 3.83333L3.16449 5.66667L6.83331 2"
+                  stroke="#93C5FD"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div>Sociabilité élevée</div>
+          </div>
+          <p class="Question">
+            ➤ Dans quel projet ou situation professionnelle spécifique avez-vous joué un rôle clé grâce à votre aisance sociale et votre capacité à dynamiser un groupe de travail ?
+
+          </p>
+        </div>
+    
+        <div class="Block BlockValid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.33331 3.83333L3.16449 5.66667L6.83331 2"
+                  stroke="#93C5FD"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div>Leadership élevé</div>
+          </div>
+          <p class="Question">
+            ➤ Pouvez-vous me raconter une situation spécifique où vous avez dû prendre spontanément le rôle de leader dans un contexte professionnel, et comment vous avez géré cette situation ?
+
+          </p>
+        </div>
+    
+        <div class="Block BlockInvalid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              
+            </div>
+            <div>Impulsivité très élevée</div>
+          </div>
+          <p class="Question">
+            ➤ Comment gérez-vous les tentations comme l'usage du téléphone ou les interactions sociales au travail pour assurer que vous restez concentré et productif ?
+
+          </p>
+        </div>
+    
+        <div class="Block BlockInvalid">
+          <div class="Trait">
+            <div class="TraitIcon">
+              
+            </div>
+            <div>Exploration basse</div>
+          </div>
+          <p class="Question">
+            ➤ Pourriez-vous me décrire une situation où vous avez dû vous adapter à un changement important dans votre environnement professionnel ? Si oui, comment vous avez géré cette transition ?
+
+          </p>
+        </div>
+    </div>
+        <div class="Footer">
+            <div class="FooterTitle">Rapport de personnalité</div>
+            <div class="FooterCandidate">laure bourdon</div>
+            <div class="FooterLogo">
+            <svg width="77" height="14" viewBox="0 0 55 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_281_6046)">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.89216 0.00363636C6.86326 0.00363636 7.7169 0.104545 8.45453 0.306667C9.19159 0.508485 9.80232 0.781212 10.2887 1.12424C10.774 1.46788 11.1404 1.87576 11.3887 2.34788C11.6377 2.82061 11.7611 3.32758 11.7611 3.86848V3.90485H9.72154V3.86848C9.72154 3.5697 9.62701 3.29515 9.43966 3.04455C9.25346 2.79455 8.99107 2.58242 8.65419 2.40848C8.31846 2.23515 7.90997 2.09939 7.42844 2.00273C6.94719 1.90576 6.41925 1.85727 5.84633 1.85727C4.47849 1.85727 3.50596 2.13212 2.92846 2.68152C2.35182 3.2303 2.06365 3.99394 2.06365 4.97152V5.10424C2.06365 6.05818 2.3501 6.80121 2.92273 7.33394C3.49622 7.86758 4.47133 8.13394 5.84633 8.13394C6.32013 8.13394 6.77445 8.10546 7.21044 8.04879C7.64586 7.99273 8.03602 7.8897 8.38005 7.7397C8.72352 7.59061 9.01628 7.38212 9.2569 7.11606C9.49753 6.84939 9.65995 6.51 9.74388 6.09788H5.91536V4.32879H11.7608V9.93939H10.5124L10.2366 8.09758C9.96961 8.63879 9.45456 9.09152 8.69544 9.45515C7.93404 9.81818 6.97669 10.0003 5.82427 10.0003C4.76896 10.0003 3.87063 9.88455 3.12984 9.65424C2.38792 9.42485 1.78635 9.09727 1.32372 8.67333C0.867392 8.2589 0.520051 7.72674 0.315391 7.12849C0.10513 6.52242 0 5.84333 0 5.09273V4.87424C0 4.15515 0.120313 3.49727 0.360938 2.89939C0.601563 2.30152 0.9625 1.78909 1.4449 1.36061C1.92615 0.932424 2.53917 0.599091 3.28453 0.361212C4.02904 0.122727 4.89844 0.00363636 5.89245 0.00363636H5.89216ZM17.2975 1.15455C18.9475 1.15455 20.1741 1.50424 20.9773 2.20242C21.78 2.90182 22.1808 3.85273 22.1808 5.05606V6.20727H14.477C14.5535 6.9503 14.8225 7.47152 15.2851 7.7703C15.7478 8.06939 16.4335 8.21879 17.343 8.21879C17.7114 8.22096 18.0794 8.19259 18.4436 8.13394C18.7796 8.07758 19.071 7.99 19.3153 7.87333C19.5594 7.75606 19.7499 7.60061 19.8877 7.40697C20.026 7.21273 20.0939 6.98242 20.0939 6.71606V6.69182H22.1808V6.71606C22.1808 7.17667 22.0868 7.60697 21.8992 8.00636C21.7127 8.40636 21.4216 8.75364 21.0278 9.04879C20.6342 9.34364 20.1283 9.57606 19.509 9.74576C18.8902 9.91485 18.1489 10 17.2852 10C15.6037 10 14.3662 9.62818 13.5724 8.88485C12.7766 8.14212 12.3802 7.0997 12.3802 5.75879V5.66182C12.3802 4.23242 12.7795 3.12364 13.5778 2.33636C14.3765 1.54848 15.6151 1.15455 17.2975 1.15455V1.15455ZM50.117 1.15455C51.828 1.15455 53.0707 1.54636 53.8421 2.3297C54.6139 3.11364 55 4.18333 55 5.54061V5.61333C55 6.97061 54.6139 8.04061 53.8421 8.82455C53.0707 9.60788 51.8283 9.9997 50.117 9.9997C48.4046 9.9997 47.1608 9.60788 46.3856 8.82455C45.6093 8.04091 45.2215 6.97061 45.2215 5.61333V5.54061C45.2215 4.18333 45.6096 3.11364 46.3856 2.3297C47.1611 1.54636 48.4046 1.15455 50.117 1.15455V1.15455ZM34.5738 0.0642424C35.3146 0.0642424 35.9474 0.145152 36.4716 0.306364C36.9947 0.467879 37.4212 0.694242 37.7495 0.985152C38.0708 1.26592 38.3192 1.62864 38.4714 2.03909C38.6246 2.45091 38.7008 2.90364 38.7008 3.39606V3.54152C38.7008 4.02636 38.6246 4.47061 38.4716 4.87424C38.3187 5.27848 38.0758 5.62364 37.744 5.91C37.4117 6.19727 36.9772 6.42152 36.4424 6.58273C35.9078 6.74424 35.2662 6.82515 34.5162 6.82515H31.307V9.93939H29.2437V0.0642424H34.5738ZM44.5463 1.15455C44.6918 1.15455 44.8055 1.15879 44.8897 1.16667C44.9787 1.17555 45.067 1.19176 45.1536 1.21515V3.37182C44.8021 3.29091 44.4065 3.23849 43.9676 3.21424C43.5276 3.19 43.1169 3.21424 42.7344 3.28697C42.3523 3.3597 42.0295 3.49121 41.7662 3.68091C41.5032 3.87091 41.3709 4.13939 41.3709 4.48667V9.93909H39.3072V1.21485H41.3706V4.08697C41.3706 3.71515 41.4267 3.35152 41.5367 2.99636C41.6463 2.64378 41.8307 2.32243 42.0759 2.05697C42.3242 1.78667 42.6525 1.56848 43.0613 1.40303C43.4695 1.23788 43.9653 1.15455 44.5463 1.15455V1.15455ZM26.0895 0V0.29697C26.0901 1.11667 25.897 1.94818 25.2926 2.10485H28.6166V4.0703H25.9766V7.03394C25.9766 7.85364 26.2049 7.97394 26.6378 7.97394H28.6166V9.93909H25.913C24.306 9.93909 23.998 9.25303 23.998 7.03364V4.0703H22.5222V2.10455H23.3137C23.9869 1.9003 24.1232 1.04424 24.1112 0.29697H24.1106V0H26.0898H26.0895ZM50.117 3.10545C49.1459 3.10545 48.4332 3.28727 47.9792 3.6503C47.5237 4.01394 47.2963 4.64818 47.2963 5.55273V5.60152C47.2963 6.50606 47.5237 7.14 47.9792 7.50364C48.4332 7.86727 49.1462 8.04909 50.117 8.04909C51.0876 8.04909 51.8003 7.86727 52.2543 7.50364C52.7089 7.14 52.9364 6.50606 52.9364 5.60152V5.55273C52.9364 4.64818 52.7089 4.01394 52.2546 3.6503C51.8003 3.28697 51.0876 3.10545 50.117 3.10545V3.10545ZM34.4022 2.00303H31.307V5.00758H34.4022C35.1355 5.00758 35.6787 4.89455 36.0293 4.66818C36.3816 4.44242 36.5572 4.05848 36.5572 3.51758V3.48091C36.5572 2.94758 36.3819 2.56848 36.0293 2.34212C35.6787 2.11576 35.1355 2.00273 34.4022 2.00273V2.00303ZM17.2517 2.88727C16.4791 2.88727 15.8718 3.00848 15.4286 3.25091C14.9846 3.49333 14.6953 3.90121 14.5575 4.47455H20.083C19.9905 3.91697 19.7144 3.51333 19.2517 3.26303C18.7888 3.01242 18.1231 2.88727 17.2517 2.88727V2.88727Z"
+                    fill="white"
+                ></path>
+                </g>
+                <defs>
+                <clipPath id="clip0_281_6046"><rect width="55" height="10" fill="white"></rect></clipPath>
+                </defs>
+            </svg>
+            </div>
+        </div>
+    </section><section>
+        <div class="Header">
+            <div class="HeaderIcons">
+            <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M4.48743 1.04626L7.97486 6.97489H1L4.48743 1.04626Z"
+                stroke="#D6E900"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect
+                x="0.669098"
+                y="0.69751"
+                width="6.62611"
+                height="6.62611"
+                stroke="#2656FF"
+                stroke-width="0.97648"
+                ></rect>
+            </svg>
+            <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M0.989456 5.01056C0.989456 2.9882 2.6289 1.34875 4.65126 1.34875V1.34875C6.67361 1.34875 8.31306 2.9882 8.31306 5.01056V5.01056C8.31306 7.03291 6.67361 8.67236 4.65126 8.67236V8.67236C2.6289 8.67236 0.989456 7.03291 0.989456 5.01056V5.01056Z"
+                stroke="#54E975"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M7.28467 5.8824C7.28467 7.48745 5.87943 9.02109 4.14598 9.02109C2.41253 9.02109 1.00729 7.48745 1.00729 5.8824C1.00729 3.78994 4.14598 1 4.14598 1C4.14598 1 7.28467 3.78994 7.28467 5.8824Z"
+                stroke="#8B5CF6"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M4.98946 0.174316L4.99089 3.75544C4.99093 3.8501 5.10438 3.89857 5.1728 3.83317L7.82534 1.29791L5.18663 3.82382C5.11658 3.89087 5.16402 4.00908 5.26098 4.00912L9 4.01049L5.26098 4.01186C5.16402 4.01189 5.11658 4.1301 5.18663 4.19715L7.82534 6.72307L5.1728 4.18781C5.10438 4.12241 4.99093 4.17088 4.99089 4.26554L4.98946 7.84666L4.98802 4.26554C4.98798 4.17088 4.87454 4.12241 4.80611 4.18781L2.15357 6.72307L4.79228 4.19715C4.86233 4.1301 4.81489 4.01189 4.71793 4.01186L0.978912 4.01049L4.71793 4.00912C4.81489 4.00908 4.86233 3.89087 4.79228 3.82382L2.15357 1.29791L4.80611 3.83317C4.87454 3.89857 4.98798 3.8501 4.98802 3.75544L4.98946 0.174316Z"
+                stroke="#FF9548"
+                stroke-width="0.97648"
+                ></path>
+            </svg>
+            </div>
+            <div>03</div>
+        </div>
+    <h1 class='Title'>Partie spécifique aux traits marqués de laure</h1><div class='Questions'>
+        <div class="Block BlockTrait">
+          <div class="Trait">
+            <div>Impulsivité très élevée</div>
+          </div>
+          <p class="Question">
+            ➤ Comment gérez-vous les tentations comme l'usage du téléphone ou les interactions sociales au travail pour assurer que vous restez concentré et productif ?
+          </p>
+        </div>
+    
+        <div class="Block BlockTrait">
+          <div class="Trait">
+            <div>Timidité très basse</div>
+          </div>
+          <p class="Question">
+            ➤ Avez-vous déjà été dans une situation professionnelle où il était crucial de peser vos mots avec un collègue ou un partenaire ? Comment avez-vous abordé cette communication ?
+          </p>
+        </div>
+    
+        <div class="Block BlockTrait">
+          <div class="Trait">
+            <div>Imagination très basse</div>
+          </div>
+          <p class="Question">
+            ➤ Pouvez-vous me raconter une expérience professionnelle dans laquelle vous avez du être particulièrement imaginatif et créatif ?
+          </p>
+        </div>
+    
+        <div class="Block BlockTrait">
+          <div class="Trait">
+            <div>Coopération très basse</div>
+          </div>
+          <p class="Question">
+            ➤ Pouvez-vous me raconter une expérience professionnelle où vous étiez en désaccord avec un ou plusieurs collègues, et êtes parvenu à trouver un compromis entre vos intérêts et ceux des autres parties impliquées ?
+          </p>
+        </div>
+    
+        <div class="Block BlockTrait">
+          <div class="Trait">
+            <div>Anxiété très basse</div>
+          </div>
+          <p class="Question">
+            ➤ Comment vous y prenez-vous pour anticiper et vous préparer à de futurs événements stressants ou à des échéances importantes dans votre vie professionnelle ? Êtes-vous du genre à prendre de l'avance ?
+          </p>
+        </div>
+    
+        <div class="Block BlockTrait">
+          <div class="Trait">
+            <div>Confiance en l'autre très élevée</div>
+          </div>
+          <p class="Question">
+            ➤ Pouvez-vous me donner un exemple d'une situation où vous avez fait confiance à un collègue ou à une équipe, et cela s'est avéré être une erreur ? Comment avez-vous géré cette situation ?
+          </p>
+        </div>
+    </div>
+        <div class="Footer">
+            <div class="FooterTitle">Rapport de personnalité</div>
+            <div class="FooterCandidate">laure bourdon</div>
+            <div class="FooterLogo">
+            <svg width="77" height="14" viewBox="0 0 55 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_281_6046)">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.89216 0.00363636C6.86326 0.00363636 7.7169 0.104545 8.45453 0.306667C9.19159 0.508485 9.80232 0.781212 10.2887 1.12424C10.774 1.46788 11.1404 1.87576 11.3887 2.34788C11.6377 2.82061 11.7611 3.32758 11.7611 3.86848V3.90485H9.72154V3.86848C9.72154 3.5697 9.62701 3.29515 9.43966 3.04455C9.25346 2.79455 8.99107 2.58242 8.65419 2.40848C8.31846 2.23515 7.90997 2.09939 7.42844 2.00273C6.94719 1.90576 6.41925 1.85727 5.84633 1.85727C4.47849 1.85727 3.50596 2.13212 2.92846 2.68152C2.35182 3.2303 2.06365 3.99394 2.06365 4.97152V5.10424C2.06365 6.05818 2.3501 6.80121 2.92273 7.33394C3.49622 7.86758 4.47133 8.13394 5.84633 8.13394C6.32013 8.13394 6.77445 8.10546 7.21044 8.04879C7.64586 7.99273 8.03602 7.8897 8.38005 7.7397C8.72352 7.59061 9.01628 7.38212 9.2569 7.11606C9.49753 6.84939 9.65995 6.51 9.74388 6.09788H5.91536V4.32879H11.7608V9.93939H10.5124L10.2366 8.09758C9.96961 8.63879 9.45456 9.09152 8.69544 9.45515C7.93404 9.81818 6.97669 10.0003 5.82427 10.0003C4.76896 10.0003 3.87063 9.88455 3.12984 9.65424C2.38792 9.42485 1.78635 9.09727 1.32372 8.67333C0.867392 8.2589 0.520051 7.72674 0.315391 7.12849C0.10513 6.52242 0 5.84333 0 5.09273V4.87424C0 4.15515 0.120313 3.49727 0.360938 2.89939C0.601563 2.30152 0.9625 1.78909 1.4449 1.36061C1.92615 0.932424 2.53917 0.599091 3.28453 0.361212C4.02904 0.122727 4.89844 0.00363636 5.89245 0.00363636H5.89216ZM17.2975 1.15455C18.9475 1.15455 20.1741 1.50424 20.9773 2.20242C21.78 2.90182 22.1808 3.85273 22.1808 5.05606V6.20727H14.477C14.5535 6.9503 14.8225 7.47152 15.2851 7.7703C15.7478 8.06939 16.4335 8.21879 17.343 8.21879C17.7114 8.22096 18.0794 8.19259 18.4436 8.13394C18.7796 8.07758 19.071 7.99 19.3153 7.87333C19.5594 7.75606 19.7499 7.60061 19.8877 7.40697C20.026 7.21273 20.0939 6.98242 20.0939 6.71606V6.69182H22.1808V6.71606C22.1808 7.17667 22.0868 7.60697 21.8992 8.00636C21.7127 8.40636 21.4216 8.75364 21.0278 9.04879C20.6342 9.34364 20.1283 9.57606 19.509 9.74576C18.8902 9.91485 18.1489 10 17.2852 10C15.6037 10 14.3662 9.62818 13.5724 8.88485C12.7766 8.14212 12.3802 7.0997 12.3802 5.75879V5.66182C12.3802 4.23242 12.7795 3.12364 13.5778 2.33636C14.3765 1.54848 15.6151 1.15455 17.2975 1.15455V1.15455ZM50.117 1.15455C51.828 1.15455 53.0707 1.54636 53.8421 2.3297C54.6139 3.11364 55 4.18333 55 5.54061V5.61333C55 6.97061 54.6139 8.04061 53.8421 8.82455C53.0707 9.60788 51.8283 9.9997 50.117 9.9997C48.4046 9.9997 47.1608 9.60788 46.3856 8.82455C45.6093 8.04091 45.2215 6.97061 45.2215 5.61333V5.54061C45.2215 4.18333 45.6096 3.11364 46.3856 2.3297C47.1611 1.54636 48.4046 1.15455 50.117 1.15455V1.15455ZM34.5738 0.0642424C35.3146 0.0642424 35.9474 0.145152 36.4716 0.306364C36.9947 0.467879 37.4212 0.694242 37.7495 0.985152C38.0708 1.26592 38.3192 1.62864 38.4714 2.03909C38.6246 2.45091 38.7008 2.90364 38.7008 3.39606V3.54152C38.7008 4.02636 38.6246 4.47061 38.4716 4.87424C38.3187 5.27848 38.0758 5.62364 37.744 5.91C37.4117 6.19727 36.9772 6.42152 36.4424 6.58273C35.9078 6.74424 35.2662 6.82515 34.5162 6.82515H31.307V9.93939H29.2437V0.0642424H34.5738ZM44.5463 1.15455C44.6918 1.15455 44.8055 1.15879 44.8897 1.16667C44.9787 1.17555 45.067 1.19176 45.1536 1.21515V3.37182C44.8021 3.29091 44.4065 3.23849 43.9676 3.21424C43.5276 3.19 43.1169 3.21424 42.7344 3.28697C42.3523 3.3597 42.0295 3.49121 41.7662 3.68091C41.5032 3.87091 41.3709 4.13939 41.3709 4.48667V9.93909H39.3072V1.21485H41.3706V4.08697C41.3706 3.71515 41.4267 3.35152 41.5367 2.99636C41.6463 2.64378 41.8307 2.32243 42.0759 2.05697C42.3242 1.78667 42.6525 1.56848 43.0613 1.40303C43.4695 1.23788 43.9653 1.15455 44.5463 1.15455V1.15455ZM26.0895 0V0.29697C26.0901 1.11667 25.897 1.94818 25.2926 2.10485H28.6166V4.0703H25.9766V7.03394C25.9766 7.85364 26.2049 7.97394 26.6378 7.97394H28.6166V9.93909H25.913C24.306 9.93909 23.998 9.25303 23.998 7.03364V4.0703H22.5222V2.10455H23.3137C23.9869 1.9003 24.1232 1.04424 24.1112 0.29697H24.1106V0H26.0898H26.0895ZM50.117 3.10545C49.1459 3.10545 48.4332 3.28727 47.9792 3.6503C47.5237 4.01394 47.2963 4.64818 47.2963 5.55273V5.60152C47.2963 6.50606 47.5237 7.14 47.9792 7.50364C48.4332 7.86727 49.1462 8.04909 50.117 8.04909C51.0876 8.04909 51.8003 7.86727 52.2543 7.50364C52.7089 7.14 52.9364 6.50606 52.9364 5.60152V5.55273C52.9364 4.64818 52.7089 4.01394 52.2546 3.6503C51.8003 3.28697 51.0876 3.10545 50.117 3.10545V3.10545ZM34.4022 2.00303H31.307V5.00758H34.4022C35.1355 5.00758 35.6787 4.89455 36.0293 4.66818C36.3816 4.44242 36.5572 4.05848 36.5572 3.51758V3.48091C36.5572 2.94758 36.3819 2.56848 36.0293 2.34212C35.6787 2.11576 35.1355 2.00273 34.4022 2.00273V2.00303ZM17.2517 2.88727C16.4791 2.88727 15.8718 3.00848 15.4286 3.25091C14.9846 3.49333 14.6953 3.90121 14.5575 4.47455H20.083C19.9905 3.91697 19.7144 3.51333 19.2517 3.26303C18.7888 3.01242 18.1231 2.88727 17.2517 2.88727V2.88727Z"
+                    fill="white"
+                ></path>
+                </g>
+                <defs>
+                <clipPath id="clip0_281_6046"><rect width="55" height="10" fill="white"></rect></clipPath>
+                </defs>
+            </svg>
+            </div>
+        </div>
+    </section></body></html>

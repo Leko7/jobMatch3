@@ -1,3 +1,5 @@
+# JobMatch
+
 Generate a personalized psychometric report, based on a job description (job_description.txt) and the psychometric results of a candidate to the Big Five personality test, stored in the results table (results.csv).
 
 The first scripts uses LLM API calls to analyse the job description and determine the most relevant psychological traits.

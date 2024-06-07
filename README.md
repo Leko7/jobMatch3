@@ -7,4 +7,4 @@ It generates a report about the trait recognition (traits_recognition_report.htm
 
 The second scripts adds relevant traits, based on the name of the job and the position type (ex: manager).
 
-The third script creates the personalized report for a specific candidate, in pdf format (output_data/candidates_reports/candidate_name.pdf).
+The third script creates the personalized report for a specific candidate, in pdf format (output_data/candidates_reports/candidate_name_report.pdf).

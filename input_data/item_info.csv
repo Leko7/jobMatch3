@@ -1,0 +1,211 @@
+page,bloc_id,intitule_item,item_id,facette_id,intitule_facette,attractivite,charge_mentale,forme_negative,reversed,ordre_item_page
+1,b35,Je suis vif dans mes actions,E4.2,E4,Dynamisme,2.711805556,0,0,,item 1 page 1
+1,b35,J'aime me confronter à d'autres systèmes de pensée,O6.2,O6,Croyances,2.645833333,0,0,,item 2 page 1
+1,b35,J'aime me plonger dans mon imagination,O1.6,O1,Imagination,2.878472222,0,0,,item 3 page 1
+2,b47,J'ai de la facilité à établir des liens affectifs forts,E1.0,E1,Chaleur,2.392361111,0,0,,item 1 page 2
+2,b47,J'aime le changement,O4.6,O4,Exploration,2.361111111,0,0,,item 2 page 2
+2,b47,J'ai une énergie débordante,E4.4,E4,Dynamisme,2.40625,0,0,,item 3 page 2
+3,b31,"Lors d'un désaccord, je fais tout pour préserver la bonne entente ",A4.5,A4,Coopération,2.701388889,0,0,,item 1 page 3
+3,b31,Je suis de nature optimiste,E6.2,E6,Joie,2.520833333,0,0,,item 2 page 3
+3,b31,Je suis toujours attentionné envers les autres,A3.1,A3,Dévouement,2.868055556,0,0,,item 3 page 3
+4,b25,Je suis capable de me priver d'un plaisir pour mieux en profiter plus tard,N5.1,N5,Impulsivité,2.541666667,1,0,R,item 1 page 4
+4,b25,J'aime que l'on reconnaisse ouvertement mes qualités,A5.0,A5,Réserve,2.767361111,0,0,R,item 2 page 4
+4,b25,J'ai l'habitude de passer rapidement à l'action,C6.2,C6,Anticipation,2.458333333,0,0,R,item 3 page 4
+5,b15,Je sais très bien contrôler mes envies,N5.6,N5,Impulsivité,2.138888889,0,0,R,item 1 page 5
+5,b15,J'aime improviser mes tâches au jour le jour,C2.1,C2,Organisation,2.184027778,0,0,R,item 2 page 5
+5,b15,Je suis toujours de bonne humeur,E6.1,E6,Joie,2.211805556,0,0,,item 3 page 5
+6,b69,J'aime discuter avec des personnes aux idées opposées aux miennes,O5.2,O5,Idées,2.420138889,0,0,,item 1 page 6
+6,b69,Je remet parfois en question mes croyances,O6.3,O6,Croyances,2.097222222,0,0,,item 2 page 6
+6,b69,Je privilégie les sorties dans les endroits que je connais bien,O4.5,O4,Exploration,2.357638889,0,0,R,item 3 page 6
+7,b5,Je ne suis pas gêné facilement,N4.0,N4,Timidité,1.684027778,0,1,R,item 1 page 7
+7,b5,"Lorsque je prévois mon temps libre, j'opte généralement pour une activité de groupe",E2.6,E2,Sociabilité,1.868055556,1,0,,item 2 page 7
+7,b5,Je me mets rarement en colère,N2.0,N2,Colère,2.090277778,0,0,R,item 3 page 7
+8,b7,Je suis calme sous la pression,N6.3,N6,Vulnérabilité au stress,2.246527778,0,0,R,item 1 page 8
+8,b7,Je suis rarement irrité,N2.3,N2,Colère,1.836805556,0,0,R,item 2 page 8
+8,b7,J'aide fréquemment les gens dans le besoin,A6.1,A6,Compassion,2.506944444,0,0,,item 3 page 8
+9,b14,L'art est pour moi une part essentielle de la culture,O2.0,O2,Esthétique,2.723147173,0,0,,item 1 page 9
+9,b14,Je ris beaucoup,E6.5,E6,Joie,2.815972222,0,0,,item 2 page 9
+9,b14,Je peux paraître froid au premier abord,E1.6,E1,Chaleur,2.642361111,0,0,R,item 3 page 9
+10,b27,J'aime les idées originales,O5.1,O5,Idées,2.71875,0,0,,item 1 page 10
+10,b27,Je préfère mettre les autres en valeur plutôt que moi-même,A5.5,A5,Réserve,2.559027778,0,0,,item 2 page 10
+10,b27,Je vis mes émotions intensément,O3.4,O3,Introspection,2.847222222,0,0,,item 3 page 10
+11,b28,J'adore les sensations fortes,E5.0,E5,Recherche de stimulations,2.288194444,0,0,,item 1 page 11
+11,b28,Je crois en la bonté humaine,A1.0,A1,Confiance en l'autre,2.409722222,0,0,,item 2 page 11
+11,b28,J'excelle dans ce que je fais,C1.6,C1,Assurance,2.458333333,0,0,,item 3 page 11
+12,b33,J'aime me plonger dans un bon livre,O2.4,O2,Esthétique,2.409722222,0,0,,item 1 page 12
+12,b33,Je divertis mes collègues,E6.6,E6,Joie,2.375,0,0,,item 2 page 12
+12,b33,Je suis stratégique lorsque je m'adresse aux autres,A2.5,A2,Franc-parler,2.239583333,0,0,R,item 3 page 12
+13,b43,J'aime mettre en avant ce qui me rend exceptionnel,A5.6,A5,Réserve,2.0,0,0,R,item 1 page 13
+13,b43,J'aime quand il y a d'autres personnes dans la même pièce que moi,E2.2,E2,Sociabilité,2.246527778,0,0,,item 2 page 13
+13,b43,"Dans les situations de groupe, c'est souvent moi qui dirige",E3.1,E3,Leadership,1.958333333,0,0,,item 3 page 13
+14,b48,"Quand cela est nécessaire, j'affirme mes limites quitte à hausser le ton",A4.2,A4,Coopération,2.670138889,1,0,R,item 1 page 14
+14,b48,J'ai tendance à rester sur mes gardes avec les nouvelles connaissances,A1.2,A1,Confiance en l'autre,2.708333333,0,0,R,item 2 page 14
+14,b48,Je suis touché par la souffrance des personnes en situation précaire,A6.0,A6,Compassion,2.902777778,0,0,,item 3 page 14
+15,b0,"Si je commence un projet personnel, je le termine",C5.6,C5,Persévérance,2.722222222,0,0,,item 1 page 15
+15,b0,Je ne suis pas intéressé par les discussions théoriques,O5.5,O5,Idées,2.488847911,0,1,R,item 2 page 15
+15,b0,J'aime passer du temps seul,E2.1,E2,Sociabilité,2.5,0,0,R,item 3 page 15
+16,b2,Je trouve assez peu d'intérêt à l'art en général,O2.6,O2,Esthétique,1.690972222,0,0,R,item 1 page 16
+16,b2,Les personnes trop sensibles ont tendance à me fatiguer,A6.3,A6,Compassion,1.84375,0,0,R,item 2 page 16
+16,b2,Je fais parfois des écarts quant à mes obligations,C3.3,C3,Sens du devoir,1.190972222,0,0,R,item 3 page 16
+17,b3,Je suis détendu la plupart du temps,N1.4,N1,Anxiété,2.09375,0,0,R,item 1 page 17
+17,b3,Je m'intéresse aux faits plus qu'aux ressentis,O3.6,O3,Introspection,2.208333333,0,0,R,item 2 page 17
+17,b3,Je reste calme même lorsqu'on me provoque,N2.4,N2,Colère,2.204861111,0,0,R,item 3 page 17
+18,b9,J'aime les couleurs vives,E5.6,E5,Recherche de stimulations,2.517361111,0,0,,item 1 page 18
+18,b9,J'adapte mon discours pour influencer les autres,A2.4,A2,Franc-parler,2.34375,0,0,R,item 2 page 18
+18,b9,Je gère avec sang froid les situations de crise,N6.1,N6,Vulnérabilité au stress,2.493055556,0,0,R,item 3 page 18
+19,b10,J'apprécie de ressentir toute l'intensité d'une émotion,O3.5,O3,Introspection,2.503472222,0,0,,item 1 page 19
+19,b10,Nous devrions tous nous occuper des personnes en difficulté,A6.5,A6,Compassion,2.680555556,0,0,,item 2 page 19
+19,b10,Je me préoccupe plus des autres que de moi-même,A3.2,A3,Dévouement,2.600694444,0,0,,item 3 page 19
+20,b11,Je me questionne toujours sur les effets à long terme d'un projet avant de m'y lancer,C6.4,C6,Anticipation,2.642361111,1,0,,item 1 page 20
+20,b11,J'ai une très bonne gestion du stress,N6.6,N6,Vulnérabilité au stress,2.678819444,0,0,R,item 2 page 20
+20,b11,Je suis dynamique quelle que soit l'action que j'entreprends,E4.0,E4,Dynamisme,2.545138889,0,0,,item 3 page 20
+21,b12,Mon espace de travail est souvent désordonné,C2.4,C2,Organisation,1.770833333,0,0,R,item 1 page 21
+21,b12,J'aime parler de mes succès,A5.4,A5,Réserve,1.864583333,0,0,R,item 2 page 21
+21,b12,Je ne suis pas particulièrement sensible à l'art sous toutes ses formes,O2.1,O2,Esthétique,1.847222222,1,1,R,item 3 page 21
+22,b16,Ecouter les problèmes des autres m'ennuie,A3.6,A3,Dévouement,1.378472222,0,0,R,item 1 page 22
+22,b16,Je stresse facilement avant un événement important,N6.2,N6,Vulnérabilité au stress,2.029513889,0,0,,item 2 page 22
+22,b16,Les gens sont généralement honnêtes,A1.6,A1,Confiance en l'autre,1.614583333,0,0,,item 3 page 22
+23,b17,J'aime me présenter sous mon meilleur jour,A5.3,A5,Réserve,2.989583333,0,0,R,item 1 page 23
+23,b17,Je suis facilement ému par les personnes qui souffrent dans le monde,A6.2,A6,Compassion,2.71875,0,0,,item 2 page 23
+23,b17,Je respecte toujours mes engagements,C3.6,C3,Sens du devoir,2.847222222,0,0,,item 3 page 23
+24,b18,J'essaie fréquemment de nouvelles activités,O4.1,O4,Exploration,2.079861111,0,0,,item 1 page 24
+24,b18,Je résiste facilement à mes impulsions,N5.0,N5,Impulsivité,2.076388889,0,0,R,item 2 page 24
+24,b18,Il est très difficile de me contrarier,N2.5,N2,Colère,1.711805556,0,0,R,item 3 page 24
+25,b20,Je mets beaucoup d'enthousiasme dans mes actions,E4.1,E4,Dynamisme,2.892361111,0,0,,item 1 page 25
+25,b20,"Quand je m'implique dans un projet, je sais comment faire avancer les choses",C1.1,C1,Assurance,2.947800316,1,0,,item 2 page 25
+25,b20,J'aime me perdre dans mes pensées,O1.2,O1,Imagination,2.795138889,0,0,,item 3 page 25
+26,b22,"Dans les interactions, je maintiens une certaine distance avec autrui",E1.3,E1,Chaleur,2.201388889,1,0,R,item 1 page 26
+26,b22,"Je pense qu'au fond, chacun est responsable de sa propre souffrance",A6.6,A6,Compassion,2.298611111,0,0,R,item 2 page 26
+26,b22,Je sais résister à ce qui me fait envie,N5.2,N5,Impulsivité,2.211805556,0,0,R,item 3 page 26
+27,b24,Je réalise avec beaucoup de soin le travail que l'on me confie,C3.1,C3,Sens du devoir,3.163194444,0,0,,item 1 page 27
+27,b24,J'aime avoir un planning précis et m'y tenir,C2.3,C2,Organisation,2.059027778,0,0,,item 2 page 27
+27,b24,Je ne remet pas en question les choses qui fonctionnent,O6.6,O6,Croyances,2.274305556,0,1,R,item 3 page 27
+28,b26,Je réfléchis à toutes les conséquences de mes actions avant de me lancer,C6.0,C6,Anticipation,2.767361111,0,0,,item 1 page 28
+28,b26,Je n'attends pas qu'on me le demande pour exprimer mon opinion,A4.6,A4,Coopération,2.479166667,0,1,R,item 2 page 28
+28,b26,Je me sens capable de réaliser les tâches qu'on me confie,C1.4,C1,Assurance,3.041666667,0,0,,item 3 page 28
+29,b30,J'ai tendance à remettre en question l'autorité,O6.5,O6,Croyances,2.246527778,0,0,,item 1 page 29
+29,b30,J'aime aider les autres par dessus tout,A3.5,A3,Dévouement,2.496527778,0,0,,item 2 page 29
+29,b30,"Il m'arrive de frissonner en découvrant une oeuvre d'art (peinture, musique, cinéma, littérature etc.)",O2.3,O2,Esthétique,2.260416667,1,0,,item 3 page 29
+30,b32,Je planifie mes actions quotidiennes,C2.0,C2,Organisation,2.145833333,0,0,,item 1 page 30
+30,b32,Je fais confiance aux autres,A1.4,A1,Confiance en l'autre,2.079861111,0,0,,item 2 page 30
+30,b32,Je sors toujours dans les endroits que je connais bien,O4.4,O4,Exploration,2.319444444,0,0,R,item 3 page 30
+31,b36,J'aime philosopher sur des sujets profonds,O5.3,O5,Idées,2.743055556,0,0,,item 1 page 31
+31,b36,J'assume mes responsabilités jusqu'au bout,C3.4,C3,Sens du devoir,3.076388889,0,0,,item 2 page 31
+31,b36,J'apprécie les émotions déclenchés par l'ambiance d'un lieu,O3.1,O3,Introspection,2.944444444,0,0,,item 3 page 31
+32,b39,Je ne tiens pas toujours mes promesses,C3.0,C3,Sens du devoir,1.534722222,0,1,R,item 1 page 32
+32,b39,J'aime être au milieu d'une foule,E2.3,E2,Sociabilité,1.215277778,0,0,,item 2 page 32
+32,b39,Je ressent peu d'émotions différentes,O3.2,O3,Introspection,1.243055556,0,0,R,item 3 page 32
+33,b40,Je fais tout pour réussir dans la vie,C4.2,C4,Recherche de réussite,2.732638889,0,0,,item 1 page 33
+33,b40,J'aime être responsable d'une équipe,E3.2,E3,Leadership,2.364583333,0,0,,item 2 page 33
+33,b40,Il est important de remettre en question ses croyances,O6.1,O6,Croyances,2.642361111,0,0,,item 3 page 33
+34,b1,J'aime jouer avec les concepts et les idées,O5.0,O5,Idées,2.371527778,0,0,,item 1 page 34
+34,b1,Je fuis les conflits,A4.0,A4,Coopération,2.288194444,0,0,,item 2 page 34
+34,b1,Je sais obtenir ce que je veux des autres,A2.0,A2,Franc-parler,2.211805556,0,0,R,item 3 page 34
+35,b41,J'aime les environnements animés,E5.2,E5,Recherche de stimulations,2.277777778,0,0,,item 1 page 35
+35,b41,"Lorsque quelqu'un m'agace, je lui fais savoir",A4.4,A4,Coopération,2.600694444,0,0,R,item 2 page 35
+35,b41,Je préfère respecter les règles plutôt que les remettre en cause,O6.0,O6,Croyances,2.256944444,0,0,R,item 3 page 35
+36,b44,"Si j'ai trop de pression sur les épaules, je perds mes moyens",N6.4,N6,Vulnérabilité au stress,1.407986111,0,0,,item 1 page 36
+36,b44,Je ne peux pas me priver de quelque chose que je désire vraiment,N5.5,N5,Impulsivité,2.166666667,1,1,,item 2 page 36
+36,b44,Je m'intéresse peu à l'art en général,O2.5,O2,Esthétique,1.909722222,0,0,R,item 3 page 36
+37,b45,Je sais m'imposer,E3.4,E3,Leadership,2.510416667,0,0,,item 1 page 37
+37,b45,Je sais flatter quand cela est utile,A2.1,A2,Franc-parler,2.71875,0,0,R,item 2 page 37
+37,b45,Je peux persévérer longtemps dans un projet malgré l'ennui,C5.3,C5,Persévérance,2.53125,0,0,,item 3 page 37
+38,b4,Je cède facilement aux envies du moment,N5.4,N5,Impulsivité,2.107638889,0,0,,item 1 page 38
+38,b4,Je préfère agir spontanément plutôt que trop réfléchir,C6.1,C6,Anticipation,1.902777778,1,0,R,item 2 page 38
+38,b4,Je sais ruser pour obtenir ce que je veux des autres,A2.6,A2,Franc-parler,2.190972222,0,0,R,item 3 page 38
+39,b37,Je crois que la plupart des gens sont bien intentionnés,A1.5,A1,Confiance en l'autre,1.90625,0,0,,item 1 page 39
+39,b37,Je suis généralement tendu,N1.1,N1,Anxiété,2.107638889,0,0,,item 2 page 39
+39,b37,"J'ai du mal à me forcer à faire une activité ennuyante, même s'il le faut",C5.1,C5,Persévérance,2.105902778,1,0,R,item 3 page 39
+40,b49,Je ne reste jamais bien longtemps déprimé,N3.2,N3,Tristesse,3.048611111,0,1,R,item 1 page 40
+40,b49,Je ressens une grande variété d'émotions,O3.0,O3,Introspection,3.024305556,0,0,,item 2 page 40
+40,b49,Je peux continuer une tâche malgré les distractions,C5.4,C5,Persévérance,2.968691825,0,0,,item 3 page 40
+41,b8,Je respecte les règles à la lettre,C3.2,C3,Sens du devoir,2.104166667,0,0,,item 1 page 41
+41,b8,Je n'arrive pas à me restreindre dans mes plaisirs,N5.3,N5,Impulsivité,1.996527778,0,1,,item 2 page 41
+41,b8,Je crains généralement que le pire ne se produise,N1.0,N1,Anxiété,2.46875,0,0,,item 3 page 41
+42,b13,"Je ne suis pas particulièrement ému par les œuvres d'art (peinture, musique, cinéma, littérature etc.)",O2.2,O2,Esthétique,1.722222222,1,1,R,item 1 page 42
+42,b13,Je préfère m'en tenir aux choses que je connais,O4.3,O4,Exploration,1.826388889,0,0,R,item 2 page 42
+42,b13,Je pourrais manipuler les gens si je le voulais,A2.2,A2,Franc-parler,1.800021953,0,0,R,item 3 page 42
+43,b52,Je me fixe des objectifs très ambitieux,C4.1,C4,Recherche de réussite,2.635416667,0,0,,item 1 page 43
+43,b52,Je pense souvent qu'il y a plus compétant que moi,C1.2,C1,Assurance,2.868055556,0,0,R,item 2 page 43
+43,b52,J'aime que l'on me fasse part d'idées originales voire absurdes,O5.4,O5,Idées,2.8125,1,0,,item 3 page 43
+44,b19,Je me perds rarement dans mes pensées,O1.4,O1,Imagination,1.298611111,0,0,R,item 1 page 44
+44,b19,Je suis capable de trouver des solutions pertinentes,C1.3,C1,Assurance,3.086805556,0,0,,item 2 page 44
+44,b19,Je suis prêt à fournir beaucoup d'efforts pour atteindre mes objectifs,C5.2,C5,Persévérance,3.149305556,0,0,,item 3 page 44
+45,b21,Je n'ai pas de très grandes ambitions,C4.3,C4,Recherche de réussite,1.813205421,0,1,R,item 1 page 45
+45,b21,J'aime mettre en avant mes qualités,A5.2,A5,Réserve,2.118055556,0,0,R,item 2 page 45
+45,b21,Je dis parfois des choses dans le seul but d'obtenir ce que je veux,A2.3,A2,Franc-parler,2.065972222,1,0,R,item 3 page 45
+46,b50,Je me préoccupe beaucoup de mes collègues,A3.0,A3,Dévouement,2.510416667,0,0,,item 1 page 46
+46,b50,J'ai une imagination débordante,O1.5,O1,Imagination,2.614583333,0,0,,item 2 page 46
+46,b50,J'apprécie lorsqu'il y a de l'animation autour de moi,E5.1,E5,Recherche de stimulations,2.454861111,0,0,,item 3 page 46
+47,b23,J'ai le sentiment que je ne compte pas autant que les autres,N3.0,N3,Tristesse,2.4375,0,1,,item 1 page 47
+47,b23,Je suis facilement contrarié,N2.2,N2,Colère,2.361111111,0,0,,item 2 page 47
+47,b23,J'aime que mon équipe choisisse elle-même ses tâches,E3.5,E3,Leadership,2.385416667,0,0,R,item 3 page 47
+48,b42,Je ne suis pas particulièrement méthodique,C2.2,C2,Organisation,1.6875,0,1,R,item 1 page 48
+48,b42,J'ai des difficultés à rester concentré s'il y a beaucoup de distractions,C5.0,C5,Persévérance,1.689236111,1,0,R,item 2 page 48
+48,b42,Je perds facilement patience,N2.1,N2,Colère,2.204861111,0,0,,item 3 page 48
+49,b55,Je travaille dur pour réussir,C4.4,C4,Recherche de réussite,3.055555556,0,0,,item 1 page 49
+49,b55,Je suis quelqu'un de joyeux,E6.0,E6,Joie,2.725694444,0,0,,item 2 page 49
+49,b55,Je suis quelqu'un d'organisé,C2.6,C2,Organisation,3.0625,0,0,,item 3 page 49
+50,b34,Je me lance dans les projets sans y réfléchir à deux fois,C6.3,C6,Anticipation,1.694444444,0,0,R,item 1 page 50
+50,b34,Je ne suis pas quelqu'un de particulièrement imaginatif,O1.1,O1,Imagination,1.541666667,0,1,R,item 2 page 50
+50,b34,Je suis quelqu'un de plutôt craintif,N1.5,N1,Anxiété,1.394965278,0,0,,item 3 page 50
+51,b6,J'ai l'habitude d'agir prudemment,C6.6,C6,Anticipation,2.545138889,0,0,,item 1 page 51
+51,b6,J'ai toujours des petites attentions pour les autres,A3.3,A3,Dévouement,2.677083333,0,0,,item 2 page 51
+51,b6,J'ai parfois une sensation de vide intérieur,N3.3,N3,Tristesse,2.645833333,0,0,,item 3 page 51
+52,b56,Je prends plaisir à créer une atmosphère chaleureuse dans les échanges avec les autres,E1.4,E1,Chaleur,2.878472222,1,0,,item 1 page 52
+52,b56,Je ne suis jamais déprimé,N3.6,N3,Tristesse,2.071180556,0,1,R,item 2 page 52
+52,b56,"Quand j'ai le choix, je préfère travailler seul",E2.0,E2,Sociabilité,2.625,0,0,R,item 3 page 52
+53,b38,Un pic de stress peut me bloquer totalement,N6.5,N6,Vulnérabilité au stress,1.190972222,0,0,,item 1 page 53
+53,b38,Ressentir intensément une émotion me semble avoir peu d'intérêt,O3.3,O3,Introspection,1.190972222,1,0,R,item 2 page 53
+53,b38,Je ne suis pas particulièrement souriant,E1.2,E1,Chaleur,1.434027778,0,1,R,item 3 page 53
+54,b29,J'apprécie les endroits bruyants,E5.3,E5,Recherche de stimulations,1.305555556,0,0,,item 1 page 54
+54,b29,Je suis quelqu'un d'anxieux,N1.2,N1,Anxiété,1.421006944,0,0,,item 2 page 54
+54,b29,Je me trouve souvent meilleur que les autres,A5.1,A5,Réserve,1.53125,0,0,R,item 3 page 54
+55,b59,J'aime visiter de nouveaux lieux,O4.0,O4,Exploration,3.017361111,0,0,,item 1 page 55
+55,b59,Je convaincs facilement les autres,E3.6,E3,Leadership,3.0,0,0,,item 2 page 55
+55,b59,Pour moi respecter les règles est essentiel,C3.5,C3,Sens du devoir,2.336805556,0,0,,item 3 page 55
+56,b46,Je peux être très agacé par des détails,N2.6,N2,Colère,2.206597222,0,0,,item 1 page 56
+56,b46,J'exprime peu ma joie et mon enthousiasme,E6.3,E6,Joie,1.871527778,0,0,R,item 2 page 56
+56,b46,Il m'arrive de déclencher un conflit,A4.1,A4,Coopération,1.673611111,0,0,R,item 3 page 56
+57,b53,Je peux parfois manquer d'optimisme,E6.4,E6,Joie,2.319444444,0,0,R,item 1 page 57
+57,b53,Les distractions fréquentes me fatiguent,E5.4,E5,Recherche de stimulations,2.368055556,0,0,R,item 2 page 57
+57,b53,J’ai parfois la sensation que ma vie manque de sens,N3.4,N3,Tristesse,2.576388889,0,0,,item 3 page 57
+58,b60,Je préfère passer du temps avec les autres plutôt que seul,E2.5,E2,Sociabilité,1.902777778,1,0,,item 1 page 58
+58,b60,J'estime essentiel d'accepter l'autorité sans la questionner,O6.4,O6,Croyances,1.590277778,0,0,R,item 2 page 58
+58,b60,Je me sens gêné lorsque je dois parler à de nouvelles personnes,N4.2,N4,Timidité,1.190972222,0,0,,item 3 page 58
+59,b51,"Lorsque cela me paraît nécessaire, je peux initier un conflit",A4.3,A4,Coopération,1.920138889,1,0,R,item 1 page 59
+59,b51,Je suis timide,N4.4,N4,Timidité,2.173611111,0,0,,item 2 page 59
+59,b51,J'aime gérer une seule chose à la fois,E4.5,E4,Dynamisme,2.21875,0,0,R,item 3 page 59
+60,b54,J'aime montrer aux autres que je les apprécie,E1.5,E1,Chaleur,2.90625,0,0,,item 1 page 60
+60,b54,J'arrive toujours à débloquer les situations compliquées,C1.5,C1,Assurance,2.493055556,0,0,,item 2 page 60
+60,b54,Je me méfie très souvent des intentions cachées des autres,A1.3,A1,Confiance en l'autre,2.892361111,0,0,R,item 3 page 60
+61,b61,"Lorsque j'apprécie quelqu'un, cela se voit",E1.1,E1,Chaleur,3.010416667,0,0,,item 1 page 61
+61,b61,Je fais tout mon possible pour atteindre l'excellence,C4.5,C4,Recherche de réussite,2.715277778,0,0,,item 2 page 61
+61,b61,J'ai des intérêts intellectuels très variés,O5.6,O5,Idées,2.857638889,0,0,,item 3 page 61
+62,b57,J'ai besoin d'être toujours occupé,E4.3,E4,Dynamisme,2.513888889,0,0,,item 1 page 62
+62,b57,Je me fais beaucoup de reproches,N3.1,N3,Tristesse,2.71875,0,0,,item 2 page 62
+62,b57,Je me laisse attendrir facilement par la misère des autres,A6.4,A6,Compassion,2.392361111,0,0,,item 3 page 62
+63,b58,Je laisse souvent libre cours à mon imagination,O1.0,O1,Imagination,2.798611111,0,0,,item 1 page 63
+63,b58,Je me sens seulement à l'aise avec mes amis,N4.1,N4,Timidité,1.342013889,0,0,,item 2 page 63
+63,b58,J'oublie souvent où je laisse mes affaires,C2.5,C2,Organisation,1.190972222,0,0,R,item 3 page 63
+64,b63,Je prends des décisions rapidement,C6.5,C6,Anticipation,2.3125,0,0,R,item 1 page 64
+64,b63,Je suis plus calme que dynamique,E4.6,E4,Dynamisme,2.229166667,0,0,R,item 2 page 64
+64,b63,Je suis très embarrassé lorsque je prends la parole devant des inconnus,N4.3,N4,Timidité,2.170138889,1,0,,item 3 page 64
+65,b67,Je n'aime pas prendre les décisions pour un groupe,E3.3,E3,Leadership,1.830764841,0,1,R,item 1 page 65
+65,b67,Je suis facilement dans l'appréhension,N1.3,N1,Anxiété,1.785427643,0,0,,item 2 page 65
+65,b67,Je prends soin de moi avant de prendre soin des autres,A3.4,A3,Dévouement,1.725694444,0,0,R,item 3 page 65
+66,b65,Je suis très exigeant envers moi-même,C4.0,C4,Recherche de réussite,3.25,0,0,,item 1 page 66
+66,b65,Je persévère dans mes objectifs malgré la difficulté,C5.5,C5,Persévérance,3.069444444,0,0,,item 2 page 66
+66,b65,J'aime découvrir de nouvelles choses,O4.2,O4,Exploration,3.215277778,0,0,,item 3 page 66
+67,b64,J'aime fixer un cap pour les autres,E3.0,E3,Leadership,2.166666667,0,0,,item 1 page 67
+67,b64,J'ai peur d'attirer l'attention sur moi,N4.6,N4,Timidité,2.131944444,0,0,,item 2 page 67
+67,b64,Jusqu'à preuve du contraire je considère que les autres sont dignes de confiance,A1.1,A1,Confiance en l'autre,2.100694444,1,0,,item 3 page 67
+68,b62,Je n'ai pas une grande estime de moi-même,N3.5,N3,Tristesse,2.263888889,0,1,,item 1 page 68
+68,b62,J'aime faire partie d'un groupe,E2.4,E2,Sociabilité,2.486111111,0,0,,item 2 page 68
+68,b62,L'ambition est secondaire pour moi,C4.6,C4,Recherche de réussite,2.178819444,0,0,R,item 3 page 68
+69,b68,J'aime les environnements calmes et sans bruits,E5.5,E5,Recherche de stimulations,2.940972222,0,0,R,item 1 page 69
+69,b68,"Même si j'ai beaucoup à faire, j'arrive à accomplir mes tâches",C1.0,C1,Assurance,2.897569444,0,0,,item 2 page 69
+69,b68,Je me fais souvent plus de soucis que nécessaire,N1.6,N1,Anxiété,2.753472222,0,0,,item 3 page 69
+70,b66,J'ai tendance à perdre mes moyens lorsqu'un événement important approche,N6.0,N6,Vulnérabilité au stress,1.229166667,1,0,,item 1 page 70
+70,b66,J'utilise assez peu mon imagination,O1.3,O1,Imagination,1.381944444,0,0,R,item 2 page 70
+70,b66,Je suis facilement embarrassé devant d'autres personnes,N4.5,N4,Timidité,2.131944444,0,0,,item 3 page 70
